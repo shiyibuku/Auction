@@ -1,0 +1,130 @@
+
+@charset "utf-8";
+/*-------------------------------------------reset------------------------------------------------*/
+html { color:#666; /*--
+		背景规定颜色，使iframe背景不透明
+	--*/
+	/*background:#FFF;*/
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td{ margin: 0; padding: 0; }
+table { }
+fieldset, img { border: 0; }
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: normal; }
+/*
+	TODO Figure out where this list-style rule is best set. Hedger has a request to investigate.
+*/
+li { list-style: none; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+q:before, q:after { content: ''; }
+abbr, acronym { border: 0; font-variant: normal; }
+input, textarea, select { font-family: inherit; font-size: inherit; font-weight: inherit; }
+/*to enable resizing for IE*/
+input, textarea, select {  *font-size:100%;
+}
+/*because legend doesn't inherit in IE */
+legend { color: #000; }
+/*-------------------------------------base.css-------------------------------------------*/
+/*文字排版*/
+.f12 { font-size: 12px; }
+.f14 { font-size: 14px; }
+.fb { font-weight: bold; }
+.fn { font-weight: normal; }
+.t2 { text-indent: 2em; }
+.unl, a.unl, body a.unl, body *.unl, body a.unl:link, body a.unl:visited { text-decoration: underline; }
+.no_unl { text-decoration: none; }
+.yahei { font-family: Microsoft YaHei; }
+.ma { margin: 0 auto; }
+/*定位*/
+.tl { text-align: left; }
+.tc { text-align: center; }
+.tr { text-align: right; }
+.bc { margin-left: auto; margin-right: auto; }
+/*
+	fl包含display inline  是为了解决ie6双边距  
+	如果.fl用在ul(可能还有别的标签)标签上会出现类似text-indent的bug  
+	可以通过给li标签浮动修正 或者覆盖掉此处的display属性
+*/
+.fl { float: left; display: inline; }
+.fr { float: right; display: inline; }
+.cb { clear: both; }
+.cl { clear: left; }
+.cr { clear: right; }
+/*
+	不加block在标准浏览器中无法清除ie6、7可以但下面多一像素
+	height:0px;时ie6中无法清除(给浮动块margin可以看出)
+*/
+.clear { clear: both; overflow: hidden; display: block; height: 0px; _height: 1px; }
+/*
+	clearfix清除浮动后在ie6、7中会忽略浮动框的margin-bottom
+	并且偶尔会由于layout被激活而出现一些bug  如多出间隙等
+	此时可以使用.clear来避免这种bug 或者两者结合使用
+*/
+.clear{clear:both;width:100%;display:block;height:0px;line-height:0px;font-weight:normal;overflow:hidden}
+.oh{overflow:hidden;zoom:1}
+.clearfix{*zoom:1}
+.clearfix:after {clear: both;content: " ";display: block;font-size: 0;height: 0;line-height: 0;visibility: hidden}
+/*
+	一般情况下使用clearfix即可
+	出现忽略margin等情况是clearfix与clear一起使用
+	单独使用clear一般可以清除浮动，但ie6会多一个像素
+*/
+.vm { vertical-align: middle; }
+/*解决图片 文字标签 表单 垂直对齐问题*/
+.vms { vertical-align: middle; display: inline-block; }
+/*ie空隙bug*/
+.vb_ { _vertical-align: bottom; }
+.vb { vertical-align: bottom; }
+.vt { vertical-align: top; }
+.pr { position: relative; }
+.pa { position: absolute; }
+.abs-right { position: absolute; right: 0; }
+.zoom { zoom: 1; }
+.hidden { visibility: hidden; }
+/* 去除button私有属性，解决FF中按钮文字偏下的BUG  */
+button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+border:none /*去虚线框*/;
+padding:0;
+}
+/*
+	block 如img标签有时需要此class来消除空行
+*/
+.block { display: block; }
+.none { display: none; }
+/*
+	常用的变量css可以在项目css中写出
+	如:.w10{width:10px;}
+		.m10{margin:10px;}
+		.p10{padding:10px;}
+	可在项目中给出语义化class名
+	如:.wNormal{width:100px;}
+		.wPage{width:950px;}
+	等..
+*/
+/*
+	其它需要的在项目css中写出
+	height等使用较少，这里不给出
+	边距提供0 5 10 15 20
+	宽度提供 10 20 30 40 50 100 150 200 250 300 350 400 450 500 600 700 800 900 1000
+	p放在前面 pl,pr,pt,pb等放在后面 便于覆盖
+*/
+.mt5{ margin-top:5px;}
+.mt20{ margin-top:17x;}
+.ml15{ margin-left:10px;}
+.mb20{ margin-bottom:20px;}
+/*line-height*/
+.lh24 { line-height: 24px; }
+.lh18 { line-height: 18px; }
+.lh_16 { line-height: 1.6em; }
+.lh_2 { line-height: 2em; }
+/**/
+.ovh { overflow: hidden; }
+/*去掉chrome浏览器表单焦点效果 textarea拖动大小特性*/
+input, button, select, textarea { outline: none; }
+textarea { resize: none; }
+/* CSS Document */
+
