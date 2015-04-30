@@ -37,16 +37,17 @@ header { background:url(../images/hd_bag.png) repeat-x; width: 100%; height: 44p
 .pm_txt p { line-height: 22px; }
 .prevName {  font-size: 16px; overflow: hidden; }
 .lot { color: #999999; }
-.btn_rt { background: url(../images/btn_rt.png) no-repeat; width: 12px; height: 21px; position: absolute; right: 2%; margin-top: 55px; }
+.btn_rt { background: url(../images/arrow.png) no-repeat; background-size:50%; width: 30px; height: 54px; position: absolute; right: 1px; margin-top: 55px; }
 img { vertical-align: middle; }
 
 
 /*搜索框*/
 .search{ background:#d7d7d7; padding:5px 5px 2px 5px; clear:both; overflow:hidden;}
-.search span{ font-size: 16px; font-weight: bold; color: #951301; line-height: 19px; float: left; margin-top: 3px; margin-left: 3px; }
-.search_bx{ background: url(../images/search_bg.jpg) no-repeat; background-size: auto 35px; float: left; width: 70%; overflow: hidden; height: 35px; margin:5px 10px 3px 10px; }
-.search_tx{ line-height: 30px; width: 65%; background:none;text-indent: 5px; height: 30px; float: left; border:none; }
-.search_bt{ background: url(../images/search_btn.png)  no-repeat center center; width:50px; height:30px; float:right; border:none;background-size: 30px auto; margin-top:2px;}
+.search span{ font-size: 14px; font-weight: bold; color: #951301; line-height: 19px; float: left; margin-top: 3px; margin-left: 3px; }
+.search_bx{ background: url(../images/search_bg.jpg) no-repeat; background-size: auto 35px; float: left; width: 221px; overflow: hidden; height: 35px; margin: 5px 10px 3px 10px; }
+.search_tx{ font-size:12px; line-height: 35px; width: 180px; background: none; text-indent: 5px; height: 35px; float: left; border: none; }
+.search_bt{ background: url(../images/search_btn.png)  no-repeat center center; width: 30px; height: 30px; float: right; margin-right:
+5px; border: none; background-size: 30px ; margin-top: 2px; }
 
 
 /*加微信*/
@@ -76,7 +77,7 @@ img { vertical-align: middle; }
 .Title_info { background: #d7d7d7; width: 100%; height: 45px; overflow: hidden; line-height: 45px; font-size:18px; text-indent: 10px; color: #333; }
 
 .prevName_c { font-size: 16px; font-weight: bold;  padding-top: 5px; }
-.prev_txt { width: 60%; font-size: 12px; padding-left: 5px; padding-top: 10px; color: #333; }
+.prev_txt { width: 60%; font-size: 12px; padding-left: 5px; padding-top: 10px; color: #333; padding-bottom: 10px; }
 .prev_txt p { line-height: 20px; }
 .prev_txt p span{ color:#a01207;}
 /*结果列表*/
@@ -211,23 +212,24 @@ a.mr10{ margin-right:10px; font-size:12px; color:#CCC;}
 .auction{ height:35px; line-height:35px; border-bottom:1px solid #00a6e8;border-top:1px solid #00a6e8; margin-bottom:10px; text-align:center; font-size:14px; color:#00a6e8}
 .auction img{ vertical-align:middle;}
 .detail_tab{ padding:1%;}
-.detail_tab td{ height:30px; line-height:30px; width:48%; font-size:14px; padding-left:2%}
+.detail_tab td{ height: 25px; line-height: 25px; font-size: 14px; padding-left: 2% }
 .detail_tab td span{ font-size:16px; color:#db0000;}
-.detail_tab th{ height:30px; line-height:30px; width:48%; font-size:14px;text-align:center;}
+.detail_tab th{ height: 30px; line-height: 30px; width: 68%; font-size: 14px; text-align: center; }
 .Title_time{height:35px; line-height:35px; border-bottom:1px solid #c12c20;border-top:1px solid #c12c20; margin-bottom:10px; padding-left:3%; font-size:16px; color:#c12c20}
 .Title_time img{ vertical-align:middle; padding-right:1%;}
 .Title_number{ background: #ecd5d2; width: 100%; height: 35px; overflow: hidden; line-height: 35px; font-size: 15px; text-indent: 10px; color: #000; }
 
 .firm{ overflow:hidden;}
-.firm ul li { position:relative; float:left; text-align:center;}
+.firm ul li { position:relative; float:left; text-align:center; width:33%}
 .firm ul li a { text-decoration: none; display: block; font-size:12px;}
-.firm_logo{ margin:15px 8px;}
-.firm_logo p{ height:25px; line-height:25px;}
-.painting{width: 100%; height:40px; overflow: hidden; line-height:40px; font-size: 15px; text-indent: 10px; color: #000; }
+.firm_logo{ margin:0 2px}
+.firm_logo img{ margin:15px 6px;}
+.firm_logo p{ height:20px; line-height:20px; margin-bottom:10px;}
+.painting{width: 100%; height:40px; overflow: hidden; line-height:40px; font-size: 15px; font-weight:bold; text-indent: 10px; color: #000; }
 .lst_tle{background: #d7d7d7; width: 100%; height: 35px; overflow: hidden; line-height: 35px; font-size: 15px; text-indent: 10px; color: #000; font-size:14px;}
 .lst_tle img{ vertical-align:middle; padding-right:3px;}
-.pre_p p{ height:30px; line-height:30px; padding-left:10px; font-size:14px; color:#333;}
-.describe{background: #d7d7d7;border-top:2px solid #cc0000;width: 100%; height: 35px; overflow: hidden; line-height: 35px; font-size: 15px; text-indent: 10px; color: #000; font-size:14px; margin-top:10px;}
+.pre_p p{ height: 25px; line-height: 25px; padding-left: 10px; font-size: 14px; color: #333; }
+.describe{background: #d7d7d7;border-top:2px solid #cc0000;width: 100%; height: 35px; overflow: hidden; line-height: 35px; font-size: 15px; text-indent: 10px; margin-bottom:5PX; color: #000; font-size:14px; margin-top:10px; font-weight:bold;}
 .detail p{ padding:0 5%; line-height:24px; font-size:14px; color:#000;}
 
 
@@ -247,25 +249,16 @@ a.mr10{ margin-right:10px; font-size:12px; color:#CCC;}
 .recommend{background: linear-gradient(#f0dedb, #fff); border-top:1px solid #cc0000;border-bottom:2px solid #cc0000;width: 100%; height: 35px; overflow: hidden; line-height: 35px; font-size: 15px; text-indent: 10px; color: #000; font-size:14px;}
 .recommend a{ float:right; padding-right:10px; font-size:12px; color:#666}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.login{ background:url(../images/login_bg.jpg) no-repeat ; background-size:cover; height: 459px; }
+.login_title{ font-size: 36px; line-height: 100px; color: #831101; height: 100px; margin: 70px  auto 10px  auto; width: 260px; font-weight:400;}
+.login_title span{ font-size: 16px; }
+.login_headb{ overflow:hidden; margin:90px  10px 20px 20px;}
+.login_headb img{ float:left; margin-right:15px;}
+.login_headb h3{ display:block;  font-size:26px; color:#000; line-height:50px; height:50px; font-weight:600;}
+.login_headb  span{ display:block; float:left; font-size:20px; color:#000;}
+.manages li{ position: relative; margin-top: 1px; background-image: url(../images/center.png); background-position: initial initial; background-repeat: initial initial; height:83px;}
+.manages .icon{ margin:12px 15px 12px 30px; float:left;}
+.manages .text{ float:left;}
+.manages h3{font-size:20px; line-height:30px; height:30px; font-weight:bold; padding-top:10px; text-indent:8px;}
+.manages span{ font-size:13px; line-height:30px; height:30px; color:#626262; }
+.btn_logout{ float:right; margin:20px 20px 0 0}

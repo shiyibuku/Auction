@@ -126,5 +126,15 @@ padding:0;
 /*去掉chrome浏览器表单焦点效果 textarea拖动大小特性*/
 input, button, select, textarea { outline: none; }
 textarea { resize: none; }
+::-moz-placeholder{
+    color:#555;
+}
+:-ms-input-placeholder{
+    color: #555;
+}
+ ::-webkit-input-placeholder{
+    color:#555;
+}
+
 /* CSS Document */
 
